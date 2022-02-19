@@ -18,14 +18,62 @@
                 </ul>
             </nav>
             <article>
-                <form action="/action_page.php" method="post">
-                    <label for="vnev">Vezetéknév: </label>
-                    <input type="text" id="vnev" name="vnev" /><br /><br />
-
-                    <label for="knev">Keresztnév: </label>
-                    <input type="text" id="knev" name="knev" /><br /><br />
-
-                    <input type="submit" value="OK" />
+                <form>
+                    <fieldset id="nevek">
+                        <legend>Nevek</legend>
+                        <label for="vnev">Vezetéknév: </label>
+                        <input
+                            type="text"
+                            id="vnev"
+                            name="vnev"
+                            placeholder="vezetéknév"
+                        />
+                        <label for="knev">K.név: </label>
+                        <input
+                            type="text"
+                            id="knev"
+                            name="knev"
+                            value="Katalin"
+                        />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Neme:</legend>
+                        <input
+                            type="radio"
+                            id="ferfi"
+                            name="nem"
+                            value="férfi"
+                        />
+                        <label for="no">Nő</label><br />
+                        <input type="radio" id="no" name="nem" value="nő" />
+                        <label for="ferfi">Férfi</label><br />
+                        <br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Kedvenc nyelv</legend>
+                        <input
+                            type="radio"
+                            id="html"
+                            name="fav_language"
+                            value="HTML"
+                        />
+                        <label for="html">HTML</label><br />
+                        <input
+                            type="radio"
+                            id="css"
+                            name="fav_language"
+                            value="CSS"
+                        />
+                        <label for="css">CSS</label><br />
+                        <input
+                            type="radio"
+                            id="javascript"
+                            name="fav_language"
+                            value="JavaScript"
+                        />
+                        <label for="javascript">JavaScript</label>
+                    </fieldset>
+                    <input type="button" value="OK" />
                 </form>
             </article>
             <footer>Saját név</footer>
